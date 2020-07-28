@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quiz</title>
+    <link href="index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src = "index.js"></script>
+    <script src="../../js/react.min.js"></script>
+    <script src="../../js/react-dom.min.js"></script>
+    <script src="../../js/browser.min.js"></script>
+</head>
+<body>
+<h1>Sample Quiz</h1>
+<form id="quiz" name="quiz">
+    <p>Sample Question 1</p>
+    <select id="q1" name="q1">
+        <option value="null1">Please select an option</option>
+        <option value="q1_a1">Choice#1</option>
+        <option value="q1_a2">Choice#2</option>
+        <option value="q1_a3">Choice#3</option>
+        <option value="q1_a4">Choice#4</option>
+    </select>
+    <p>Sample Question 2</p>
+    <select id="q2" name="q2">
+        <option value="null2">Please select an option</option>
+        <option value="q2_a1">Choice#1</option>
+        <option value="q2_a2">Choice#2</option>
+        <option value="q2_a3">Choice#3</option>
+        <option value="q2_a4">Choice#4</option>
+    </select>
+    <p>Sample Question 3</p>
+    <select id="q3" name="q3">
+        <option value="null3">Please select an option</option>
+        <option value="q3_a1">Choice#1</option>
+        <option value="q3_a2">Choice#2</option>
+        <option value="q3_a3">Choice#3</option>
+        <option value="q3_a4">Choice#4</option>
+    </select>
+    <p>Sample Question 4</p>
+    <select id="q4" name="q4">
+        <option value="null4">Please select an option</option>
+        <option value="q4_a1">Choice#1</option>
+        <option value="q4_a2">Choice#2</option>
+        <option value="q4_a3">Choice#3</option>
+        <option value="q4_a4">Choice#4</option>
+    </select>
+    <p></p>
+    <input id="fin" type="button" value="Submit" onclick="validate();">
+</form>
+<div id="submitted">
+    <p id="q1_check"></p>
+    <p id="q2_check"></p>
+    <p id="q3_check"></p>
+    <p id="q4_check"></p>
+    <p id="tot_score"></p>
+</div>
+</body>
+</html>
