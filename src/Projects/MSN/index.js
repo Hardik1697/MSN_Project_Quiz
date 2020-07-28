@@ -3,7 +3,7 @@
  * Create Next Page button to link to next page
  */
 
-// var com = false
+var submitted = false
 function validate() {
     var q1 = document.quiz.q1.value
     var q2 = document.quiz.q2.value
@@ -14,15 +14,15 @@ function validate() {
     var q3_bool = false
     var q4_bool = false
     var score = 0
-    if (q1 == "q1_a1") {
+    if (q1 == "q1_a3") {
         q1_bool = true
         score++
     }
-    if (q2 == "q2_a1") {
+    if (q2 == "q2_a2") {
         q2_bool = true
         score++
     }
-    if (q3 == "q3_a1") {
+    if (q3 == "q3_a4") {
         q3_bool = true
         score++
     }
@@ -52,13 +52,22 @@ function validate() {
         document.getElementById("q4_check").innerHTML = "Question 4: Incorrect, correct choice is: Choice#1";
     }
     document.getElementById("tot_score").innerHTML = "Total score: " + score;
-    // com = true
+    submitted = true
 }
 
-/**
- function next_page() {
-    if (com != true) {
-        alert("Please complete the quiz to go to the next page!")
+function submitted_or_not() {
+    if (submitted == true) {
+        alert("Sorry, you have already submitted the quiz!")
+    } else {
+        validate()
     }
 }
- **/
+
+function next_click() {
+    var x = document.getElementById("article_div");
+    x.style.display = "none";
+    var y = document.getElementById("quiz_div");
+    if (y.style.visibility = "hidden") {
+        y.style.visibility = "visible";
+    }
+}
