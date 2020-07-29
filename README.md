@@ -1,4 +1,2 @@
-1. Open src
-2. Open Projects
-3. Open MSN
-4. Run index.html file
+1. clone the repo
+2. run npm start from your directory's location in CLI
